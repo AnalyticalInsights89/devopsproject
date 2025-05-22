@@ -25,6 +25,7 @@ export default function App() {
         placeholder="Enter task"
         value={input}
         onChange={(e) => setInput(e.target.value)}
+          
       />
       <button onClick={addTask}>Add</button>
 
