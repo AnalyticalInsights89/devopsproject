@@ -19,7 +19,9 @@ jobs:
           node-version: 16
 
       - name: Install dependencies
-        run: npm install
+  run: npm install
+  working-directory: ./my-app  
 
-      - name: Build the app
-        run: npm run build
+- name: Build React app
+  run: npm run build
+  working-directory: ./my-app 
